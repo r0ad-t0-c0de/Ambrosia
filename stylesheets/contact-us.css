@@ -1,0 +1,13 @@
+.container{
+    text-align: center;
+}
+#hello{
+    font-weight: 800;
+    color: #ff4d94;
+}
+#at{
+    font-size: 275px;
+}
+.form-control{
+    border-radius: 30%;
+}

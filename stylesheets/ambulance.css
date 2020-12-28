@@ -1,0 +1,55 @@
+.col-4{
+    color:#e6f2ff;
+}
+#color{
+    color:aliceblue;
+    font-size: 30px;
+}
+#name{
+    color:#e6f2ff;
+}
+#col{
+    color:#ccff99;
+}
+.text{
+    color:#00004d;
+    font-size: 20px;
+}
+
+#img{
+    border-radius: 50%;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+#logo{
+    border-radius: 50%;
+}
+
+
+body{
+    background-color: #ccff99;
+  
+}#footer-text{
+    color: #e6f2ff;
+
+}
+.card-img-top{
+    width:725px;
+    height: 400px;
+}
+.amb{
+    background-color:#e6ffff;
+    
+    color:#00004d;
+    font-weight: 700
+        
+}
+.modal{
+    opacity: 1;
+}
+#ambulance_symbol{
+    font-size: 200px;
+    color:black
+}
