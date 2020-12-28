@@ -1,0 +1,257 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+        <link rel = "stylesheet" href="stylesheets/ambulance.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <header>
+    <title>ambulance</title>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="images/logo.jpg" height="100" width="100">
+                </a></div>
+    </nav>
+       <div class="jumbotron" style="background-color:#00134d" >
+           <div class="container-fluid">
+           <div class="row">
+                <div class="col-2"></div>
+               <div class="col-6"></div>
+               <div class="col-4"><h1 style="font-size: 50px"><strong id="name" style="color:aliceblue">Ambrosia</strong></h1></div>
+               </div>
+               <div class="row">
+                    <div class="col-sm-">
+                        <ul class="nav nav-tabs" >
+                            <li class="nav-item">
+                                <a class="nav-link "  href="home.html" id="color"><h4 id="col">Home</h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link "  href="hospitals.html" id="color"><h4 id="col">Hospitals</h4></a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link active"  href="#" id="color"><h4 id="col">Ambulance</h4></a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link "  href="about-us.html" id="color"><h4 id="col">About Us</h4></a>
+                            </li>       
+                            <li class="nav-item">
+                                <a class="nav-link "  href="faqs.html" id="color"><h4 id="col">FAQs</h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link "  href="contact-us.html" id="color"><h4 id="col">Contact Us</h4></a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>  
+        </div>
+    </div>    
+    </header>
+    
+    <body style="background-image: url(images/bg2.jpg)">
+      <div class="container-fluid"><div class="row"><div class="col-1"></div>
+          <div class="col-4">
+              <br><br><br><br><br><br>
+            <span><i class="fas fa-ambulance" id="ambulance_symbol"></i></span>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <span><i class="fas fa-heartbeat" id="ambulance_symbol"></i></span>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <span><i class="fas fa-procedures" id="ambulance_symbol"></i></span>
+          </div>
+          
+          <div class="col-6" >
+        <div class="card " id="basic">
+            <img class="card-img-top" src="images/basic.png" alt="Card image cap">
+            <div class="card-body amb">
+              <h5 class="card-title">Basic Ambulance</h5>
+              <p data-toggle="tooltip" title="These types of ambulances are the basic ambulances that we commonly see in our daily lives. Basic ambulances are handled by an emergency medical technician (EMT) and transport patients who require basic medical supervision under minor or uncritical situations such as mild fractures, and sub-acute care facilities (nursing homes). It comprises of the patient bed, pulse oximetry and oxygen delivery devices.">Details</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#b_amb_modal" id="b_amb" >
+                        Book Now</button>
+                        <div id="b_amb_modal" class="modal fade" role="dialog" >
+                <div class="modal-dialog " role="content" >
+                <div class="modal-content" style="background-color:aquamarine">
+                    <div class="modal-header" >
+                    <h4 class="modal-title">Book a basic ambulance</h4>
+                    </div>
+                    <div class="modal-body">
+                     <div class="card" style="height: 300px">
+                        <div class="card-body">
+                            <form action="" method="POST"  name="myForm1" onsubmit="return validateForm1()">
+                              <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="name" class="form-control"  id="b_name">
+                              </div>
+                                <div class="form-group">
+                              <label for="contact">Contact:</label>
+                                <input type="contact" class="form-control" placeholder="0123456789" id="b_contact">
+                                </div>
+                                <!-- <div class="form-group">
+                              <label for="date">Date:</label>
+                               <input type="text" id="text" name="date" id="m_date">
+                               </div>-->
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>       </div>                                
+            <br><br>
+          <div class="card " id="advance">
+            <img class="card-img-top" src="images/advance.jpg" alt="Card image cap">
+            <div class="card-body amb">
+              <h5 class="card-title">Advance Ambulance</h5>
+              <p data-toggle="tooltip" title="Advance ambulances are equipped with advanced equipment and tools to handle critically ill patients. They are also equipped with an ECG monitor, defibrillator, intravenous and blood drawing tools, etc. Patients who require a high level of care and who are fighting for life need services like hospital emergency department or critical care unit need advance ambulance services. Patients suffering from serious life-threatening causalities and cardiac emergencies are transported with advanced life support ambulances.">Details</p>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a_amb_modal" id="a_amb" >
+                        Book Now</button>
+                        <div id="a_amb_modal" class="modal fade" role="dialog" >
+                <div class="modal-dialog " role="content" >
+                <div class="modal-content" style="background-color:aquamarine">
+                    <div class="modal-header" >
+                    <h4 class="modal-title">Book an advance ambulance</h4>
+                    </div>
+                    <div class="modal-body">
+                     <div class="card" style="height: 300px">
+                        <div class="card-body">
+                            <form name="myForm2" action="" method=" POST" onsubmit="return validateForm2()">
+                              <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="name" class="form-control"  id="a_name">
+                              </div>
+                              <div class="form-group">
+                                <label for="contact">Contact:</label>
+                                <input type="contact" class="form-control" placeholder="0123456789" id="a_contact">
+                              </div>
+                               <!-- <div class="form-group">
+                              <label for="date">Date:</label>
+                               <input type="text" id="text" name="date" id="m_date">
+                               </div>-->
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+              </div></div><br>
+            <br>
+          <div class="card " id="mortuary">
+            <img class="card-img-top" src="images/mortuary.jpg" alt="Card image cap">
+            <div class="card-body amb">
+              <h5 class="card-title">Mortuary Ambulance</h5>
+                <p data-toggle="tooltip" title="A mortuary ambulance is used for transportation of the dead body from any place. It is also called as Hearse Van. Mortuary vans carry the body of the dead person in a freezer box. Medically trained staff make sure that all the necessary provisions are taken while transporting the physical remains of a person. They maintain the safety guidelines before transporting the dead person to the desired place and preserving the body until they receive their last rites.">Details</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m_amb_modal" id="m_amb">
+                        Book Now</button>
+                <div id="m_amb_modal" class="modal fade" role="dialog" style="opacity: 1">
+                <div class="modal-dialog " role="content" >
+                <div class="modal-content" style="background-color:aquamarine ">
+                    <div class="modal-header" >
+                    <h4 class="modal-title">Book an mortuary ambulance</h4>
+                    </div>
+                    <div class="modal-body">
+                     <div class="card" style="height: 300px">
+                        <div class="card-body">
+                           <form method="POST" name="myForm3"  onsubmit="return validateForm3()">
+                              <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="name" class="form-control"  id="m_name">
+                              </div>
+                              <div class="form-group">
+                                <label for="contact">Contact:</label>
+                                <input type="contact" class="form-control" placeholder="0123456789" id="m_contact">
+                              </div>
+                              <!-- <div class="form-group">
+                              <label for="date">Date:</label>
+                               <input type="text" id="text" name="date" id="m_date">
+                               </div>-->
+                              <button type="submit" class="btn btn-primary" >Submit</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                
+                        
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script>
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#basic").mouseenter(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                $("#advance").mouseenter(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                $("#mortuary").mouseenter(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                $("#b_amb").click(function(){
+                    $("#b_amb_modal").modal("show");
+                    });
+                
+                $("#a_amb").click(function(){
+                    $("#a_amb_modal").modal("show");
+                    });
+                
+                $("#m_amb").click(function(){
+                    $("#m_amb_modal").modal("show");
+                    });
+                
+            });
+            
+        </script>
+    </body>
+    <footer>
+        
+        <div class="container-fluid" style="background-color: #00004d" >
+            <div class="row">
+                <div class="col-1"></div>
+            <div class="col" id="footer-text" align-self-center>
+                    <h5>Links</h5>
+                     <ul class="list-unstyled"> 
+                        <li><a href="#" >About Us</a></li>
+                         <li><a href="faqs.html" >FAQs</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+               
+        <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                         <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i class="fab fa-google-plus fab-lg"></i></a>
+                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="mailto:" class="btn btn-social-icon"><i class="fab fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto" id="footer-text">
+                    <p><strong><em>© Copyright 2020 Ambrosia</em></strong></p>
+                    <p><strong><em>Designed and Developed by Disha Singh and Antra Gupta</em></strong></p>
+                </div>
+           </div>
+            </div>
+       
+    </footer>
+    </html>

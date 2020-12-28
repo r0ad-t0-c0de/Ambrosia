@@ -1,0 +1,168 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+        <link rel = "stylesheet" href="stylesheets/styles.css">
+        <link rel = "stylesheet" href="stylesheets/carousel.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-item{
+    border-style: solid;
+    border-width: 6px;
+    border-color: black;
+}
+        </style>    
+    </head>
+    <header>
+    <title>hospitals</title>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="images/logo.jpg" height="100" width="100">
+                </a></div>
+    </nav>
+       <div class="jumbotron" style="background-color:#00134d" >
+           <div class="container-fluid">
+           <div class="row">
+                <div class="col-2"></div>
+               <div class="col-6"></div>
+               <div class="col-4"><h1 style="font-size: 50px"><strong id="name" style="color:aliceblue">Ambrosia</strong></h1></div>
+               </div>
+               <div class="row">
+                    <div class="col-sm-">
+                        <ul class="nav nav-tabs" >
+                            <li class="nav-item">
+                                <a class="nav-link "  href="home.html" id="color"><h4 id="col">Home</h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"  href="#" id="color"><h4 id="col">Hospitals</h4></a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link "  href="ambulance.html" id="color"><h4 id="col">Ambulance</h4></a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link "  href="about-us.html" id="color"><h4 id="col">About Us</h4></a>
+                            </li>       
+                            <li class="nav-item">
+                                <a class="nav-link "  href="faqs.html" id="color"><h4 id="col">FAQs</h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link "  href="contact-us.html" id="color"><h4 id="col">Contact Us</h4></a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>  
+        </div>
+    </div>    
+    </header>
+    
+    <body style="background-image: url(images/bg2.jpg)">
+          <div class="container" >
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img  class="d-block img-fluid" src="images/madhuraj.jpg" alt="madhuraj">
+                     
+                </div>
+                <!--<div class="carousel-item">
+                  <img class=" img-fluid" src="https://thumbs.dreamstime.com/b/microphone-stand-public-speaking-welcoming-congratulations-speech-work-success-concept-164314279.jpg" alt="Chicago">
+                    
+                </div>-->
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="images/llr.webp" alt="llr">
+                    
+                </div>
+                   <div class="carousel-item">
+                  <img class="d-block img-fluid"  src="images/regency.jpg" alt="Regency">
+                       
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+            </div>
+            
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+              <div class="col-3 " ><button  class="p-2 bg-info"  id="madhuraj" >Madhuraaj Hospital</button></div>
+                <div class="col-1"></div>
+                <div class="col-3 " ><button class="p-2 bg-warning" id="llr">L L R Hospital</button></div>
+                <div class="col-1"></div>
+              <div class="col-3 " ><button class="p-2 bg-primary" id="regency">Regency Hospital</button></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <script>
+                $(document).ready(function(){
+                  $("#madhuraj").click(function(){
+                       
+                    $("#madhuraj").html('<div class="card"><div class="card-body"><h4 class="card-title">Madhuraaj Hospital</h4><h5 class="card-text">Semi-Private</h5><h6 class="card-text">Specialities</h6><ul><li>Cardiologist</li><li>Oncologist</li><li>Neurologist</li><li>Paediatrician</li><li>Gynaecologist</li><li>Physiotherapist</li><li>Ophthalmologist</li></ul><a href="http://www.madhuraj.org/timetable.html" target="_blank"class="card-link">Our doctors</a><br><a href="http://www.madhuraj.org/" target="_blank" id="loc" class="card-link">Website</a></div></div>');
+                    });
+                    $("#llr").click(function(){
+                       
+                    $("#llr").html('<div class="card"><div class="card-body"><h4 class="card-title">L L R Hospital</h4><h5 class="card-text">Government</h5><h6 class="card-text">Specialities</h6><ul><li>Cardiologist</li><li>Oncologist</li><li>Neurologist</li><li>Paediatrician</li><li>Gynaecologist</li><li>Physiotherapist</li><li>Ophthalmologist</li></ul><a href="https://gsvmmedicalcollege.com/hospital-administration/" target="_blank" class="card-link">Our doctors</a><br><a href="https://gsvmmedicalcollege.com/hospital-overview/" target="_blank" class="card-link">Website</a></div></div>');
+                    });
+                    $("#regency").click(function(){
+                       
+                    $("#regency").html('<div class="card"><div class="card-body"><h4 class="card-title">Regency Hospital</h4><h5 class="card-text">Private</h5><h6 class="card-text">Specialities</h6><ul><li>Cardiologist</li><li>Oncologist</li><li>Neurologist</li><li>Paediatrician</li><li>Gynaecologist</li><li>Physiotherapist</li><li>Ophthalmologist</li></ul><a href="https://regencyhealthcare.in/regency-doctors/" target="_blank" class="card-link">Our doctors</a><br><a href="https://regencyhealthcare.in/" target="_blank" class="card-link">Website</a></div></div>');
+                    });
+                });
+            
+            
+            
+           
+        </script>
+        
+    </body>
+    <footer>
+        
+        <div class="container-fluid" style="background-color: #00004d" >
+            <div class="row">
+                <div class="col-1"></div>
+            <div class="col" id="footer-text" align-self-center>
+                    <h5>Links</h5>
+                     <ul class="list-unstyled"> 
+                        <li><a href="about.html" >About Us</a></li>
+                         <li><a href="#" >FAQs</a></li>
+                        <li><a href="stores.html">Contact Us</a></li>
+                    </ul>
+                </div>
+               
+        <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                         <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i class="fab fa-google-plus fab-lg"></i></a>
+                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="mailto:" class="btn btn-social-icon"><i class="fab fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto" id="footer-text">
+                    <p><strong><em>© Copyright 2020 Ambrosia</em></strong></p>
+                    <p><strong><em>Designed and Developed by Disha Singh and Antra Gupta</em></strong></p>
+                </div>
+           </div>
+            </div>
+       
+    </footer>
+    </html>
