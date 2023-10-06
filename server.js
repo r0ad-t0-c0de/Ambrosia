@@ -1,3 +1,4 @@
+// this is a very imp file containg server related code i.e. BE
 const http = require('http');
 const fs = require('fs');
 const con = require("./db"); 
