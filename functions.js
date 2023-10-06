@@ -20,8 +20,8 @@
             name.className = 'card-title';
             date.className = 'card-subtitle text-muted';
 
-            var textName = document.createTextNode('Name: ' + comment.userName);
-            var textDate = document.createTextNode('Date: ' +comment.date);
+            var textName = document.createTextNode('Name:' + comment.userName);
+            var textDate = document.createTextNode('Date:' +comment.date);
             var textMessage = document.createTextNode(comment.comment);
 
             name.appendChild(textName);
